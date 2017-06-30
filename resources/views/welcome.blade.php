@@ -117,7 +117,7 @@
         <section class="mt5 mw8 w-100 center">
             <div class="cf ph2-ns">
                 <div class="fl w-100 w-third-ns pa3 pa2-ns ">
-                    <div class="bg-light-gray pa4 tl">
+                    <div class="bg-light-gray ba br2 b--light-gray pa4 tl">
                         <div class="mb3">
                             <img src="dist/img/slack.jpg" alt="" style="width:40px;" class="mr1">
                             <img src="dist/img/plus.jpg" alt="" style="width:15px;" class="mr1">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
-                    <div class="bg-light-gray pa4 tl">
+                    <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
                             <img src="dist/img/slack.jpg" alt="" style="width:40px;" class="mr1">
                             <img src="dist/img/plus.jpg" alt="" style="width:15px;" class="mr1">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
-                    <div class="bg-light-gray pa4 tl">
+                    <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
                             <img src="dist/img/slack.jpg" alt="" style="width:40px;" class="mr1">
                             <img src="dist/img/plus.jpg" alt="" style="width:15px;" class="mr1">
@@ -153,7 +153,7 @@
 
             <div class="cf ph2-ns">
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
-                    <div class="bg-light-gray pa4 tl">
+                    <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
                             <img src="dist/img/slack.jpg" alt="" style="width:40px;" class="mr1">
                             <img src="dist/img/plus.jpg" alt="" style="width:15px;" class="mr1">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
-                    <div class="bg-light-gray pa4 tl">
+                    <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
                             <img src="dist/img/slack.jpg" alt="" style="width:40px;" class="mr1">
                             <img src="dist/img/plus.jpg" alt="" style="width:15px;" class="mr1">
@@ -175,7 +175,7 @@
                     </div>
                 </div>
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
-                    <div class="bg-light-gray pa4 tl">
+                    <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
                             <img src="dist/img/slack.jpg" alt="" style="width:40px;" class="mr1">
                             <img src="dist/img/plus.jpg" alt="" style="width:15px;" class="mr1">

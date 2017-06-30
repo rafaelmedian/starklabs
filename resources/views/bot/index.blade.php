@@ -53,7 +53,7 @@
 
         <div class="form-group">
             <div class="fl w-100 w-80-l dt mb4 pa3 pl0-l">
-                <label for="comment" class="f5 b db mb2">Description</label>
+                <label for="comment" class="f5 b db mb2">Project Details</label>
                 <textarea id="comment" class="input-reset ba br3 bw2 b--black-10 pa1 ph3 pt3 pb6 mb2 br2 w-100" name="description" required aria-describedby="comment-desc" placeholder="Tell us about any additional project details that we should know"></textarea>
                 <!-- <small id="comment-desc" class="f6 black-60">Helper text for a form control. Can use this text to <a href="#" class="link underline black-80 hover-blue">link to more info.</a></small> -->
             </div>
@@ -80,7 +80,7 @@
                     <!-- <small id="email-desc" class="f6 black-60 db mb2">Helper text for the form control.</small> -->
                 </div>
                 <div class="fl w-100 w-40-l pa3 pl0-l ml1-ns">
-                    <label for="location" class="f5 b db mb2">What's your location</label>
+                    <label for="location" class="f5 b db mb2">What's your location?</label>
                     <input id="location" class="input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100" name="location" type="text" aria-describedby="location-desc" placeholder="United States">
                     <!-- <small id="location-desc" class="f6 black-60 db mb2">Helper text for the form control.</small> -->
                 </div>
