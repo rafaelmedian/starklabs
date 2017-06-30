@@ -1,4 +1,4 @@
-@extends('layout')
+<!-- @extends('layout')
 
 @section('content')
 
@@ -62,4 +62,4 @@
         <button type="submit" class="btn btn-default">Get started with your project</button>
     </form>
 
-@endsection
+@endsection -->
