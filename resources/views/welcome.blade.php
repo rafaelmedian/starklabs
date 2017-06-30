@@ -7,7 +7,7 @@
 
         <title>Laravel</title>
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
-
+        <link rel="stylesheet" href="{{ mix('/dist/css/app.css')}}">
     </head>
     <body>
         <div class="flex-center position-ref full-height">

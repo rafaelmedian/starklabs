@@ -1,41 +1,35 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
-    <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}">
-    <!-- Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <meta content='.' property='og:description'>
+    <meta content='' property='og:image'>
+    <meta content='' property='og:site_name'>
+    <meta content='' property='og:title'>
+    <meta content='website' property='og:type'>
+    <meta content='' property='og:url'>
+    <meta content='summary' name='twitter:card'>
+    <meta content='' name='twitter:url'>
+    <meta content='' name='twitter:title'>
+    <meta content='' name='twitter:description'>
+    <meta content='' name='twitter:image'>
+    <meta content='@' name='twitter:site'>
+    <link href='/img/favicon.ico' rel='shortcut icon'>
+    <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
     <!-- Styles -->
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+    <link href="{{ mix('dist/css/app.css')}}" rel='stylesheet'>
+    <title>Stark Ai Labs</title>
+  </head>
 <body>
-<div class="flex-center position-ref full-height">
-    @if (Route::has('login'))
-        <div class="top-right links">
-            @if (Auth::check())
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a href="{{ url('/login') }}">Login</a>
-                <a href="{{ url('/register') }}">Register</a>
-            @endif
-        </div>
-    @endif
 
-    <div>
+  <div class="">
+      @yield('content')
+  </div>
 
-    </div>
-
-    <a href="/" class="pull-right btn btn-primary">Home</a>
-    <a href="/build-bot" class="pull-right btn btn-primary">Build a bot</a>
-    <div class="content container">
-        @yield('content')
-    </div>
-        <script  type="text/javascript" src="{{ mix('dist/js/app.js') }}"></script>
-
-</div>
+  <script type="text/javascript" src="{{ mix('dist/js/app.js') }}"></script>
 </body>
 </html>
