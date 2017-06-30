@@ -1,1 +1,28 @@
+// =Base
+// ----------------------------------------------
 
+* {
+  @include transition(all, 0.2s);
+}
+
+body {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  vertical-align: baseline;
+  color: $text-2;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  cursor: pointer;
+  color: $text-2;
+  white-space: nowrap;
+  text-decoration: none;
+
+  @include transition(all, 0.15s);
+}
+
+.bg-red {
+  background-color: $red;
+}

@@ -1,0 +1,54 @@
+// =Typography
+// ----------------------------------------------
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500,700");
+
+@mixin sans-serif {
+  font: {
+    family: "Rubik", "System-UI", sans-serif;
+    weight: regular;
+  };
+}
+
+body {
+  @include sans-serif;
+}
+
+h1, h2, h3, h4 {
+  @include sans-serif;
+
+  color: $text;
+}
+
+h1 {
+  margin-bottom: $font-size-base * 1.5;
+}
+
+a {
+  .br-pill {
+    background-color: $red;
+  }
+}
+
+label {
+  color: $text;
+}
+
+.cta {
+  font-weight: 500;
+  color: white;
+  background-color: $red;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.cta-mini {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+.border-grey {
+  border-color: $gray-border;
+}
