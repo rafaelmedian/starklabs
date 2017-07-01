@@ -20,25 +20,31 @@
 
 
             <label class="f5 b db mb2">What whould you like to build?</label>
-            <div class="dt">
-                <div class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2 ml0-l">
-                    <img class="db center" src="{{ url('/dist/img/icon_bot.svg')}}"  alt="">
-                    <input type="radio" value="1" name="type" required></input>
-                    <h4 class="mb1">Custom Chatbot</h4>
-                    <p>A customized chatbot build to fit your needs</p>
-                </div>
-                <div class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2">
+            <div class="dt" >
+                <label class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 ma2 ml0-l" for="r1">
+                    <div class="pa4">
+                      <img class="db center" src="{{ url('/dist/img/icon_bot.svg')}}"  alt="">
+                      <input id="r1" class="o-0" type="radio" value="1" name="type" required></input>
+                      <h4 class="mv1" for="r1">Custom Chatbot</h4>
+                      <p for="r1">A customized chatbot build to fit your needs</p>
+                    </div>
+                </label>
+                <label class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 ma2" for="r2">
+                  <div class="pa4">
                     <img class="db center" src="{{ url('/dist/img/icon_workflow.svg')}}"  alt="">
-                    <input class="ba1 pa4" type="radio" value="2" name="type" required></input>
-                    <h4 class="mb1">Workflow Automation</h4>
+                    <input id="r2" class="o-0" type="radio" value="2" name="type" required></input>
+                    <h4 class="mv1">Workflow Automation</h4>
                     <p>A workflow automation build around the apps your use</p>
-                </div>
-                <div class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2">
+                  </div>
+                </label>
+                <label class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 ma2" for="r3">
+                  <div class="pa4">
                     <img class="db center" src="{{ url('/dist/img/icon_custom.svg')}}" alt="">
-                    <input class="ba1 pa4" type="radio" value="3" name="type" required></input>
-                    <h4>A specific need</h4>
+                    <input id="r3" class="ba1 pa4 o-0" type="radio" value="3" name="type" required></input>
+                    <h4 class="mv1">A specific need</h4>
                     <p>Create AI applications to fit your specific case</p>
-                </div>
+                  </div>
+                </label>
             </div>
         </div>
 

@@ -19,3 +19,13 @@
 .border-grey {
   border-color: $gray-border;
 }
+
+.radioholder:hover {
+  border-color: #F24B3D;
+  cursor: pointer;
+}
+
+input[type=radio]:checked+label {
+  /* Or `#a1:checked+label` if you only want it for that input */
+  border-color: #F24B3D;
+}
