@@ -10,9 +10,15 @@
     <p>We are looking for top-notch developers capable of building AI and chatbots. Sounds like a good fit for you?</p>
   </div>
 
-  @foreach ($errors->all() as $error)
-      <div class="alert alert-danger">{{ $error }}</div>
-  @endforeach
+  @if ($errors->any())
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+          <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
+  @endif
 
   <form method="POST" action="/jobapplication/create">
       {{ csrf_field() }}
@@ -64,7 +70,7 @@
           </div>
           <div class="fl w-50 w-40-l pa3 pl0-l ml1-l">
             <label class="f5 b db mb2">Hours per week are you available?</label>
-            <select class="measure input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100 " required name="hourly_rate">
+            <select class="measure input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100 " required name="availability">
               <option value="1">10 - 15</option>
               <option value="2">15 - 25</option>
               <option value="3">25 - 35</option>
