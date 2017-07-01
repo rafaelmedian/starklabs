@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\JobApplication;
+use App\Mail\JobApplication as JobApplicationMail;
+
+use function dd;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class JobApplicationController extends Controller
 {
@@ -48,10 +53,13 @@ class JobApplicationController extends Controller
         $jobApplication->years_experience = $request->years_experience;
         $jobApplication->email = $request->email;
         $jobApplication->location = $request->location;
-        $jobApplication->portfolio = $request->hourly_rate;
+        $jobApplication->hourly_rate = $request->hourly_rate;
+        $jobApplication->portfolio = $request->portfolio;
         $jobApplication->availability = $request->availability;
         $jobApplication->description = $request->description;
         $jobApplication->save();
+
+        $this->sendEmail($jobApplication);
 
         return redirect('jobapplication/thank-you');
     }
@@ -59,5 +67,9 @@ class JobApplicationController extends Controller
     public function thankYou()
     {
         return view("jobapplication/thank-you");
+    }
+
+    public function sendEmail($jobApplication) {
+        Mail::to($jobApplication)->send(new JobApplicationMail($jobApplication));
     }
 }
