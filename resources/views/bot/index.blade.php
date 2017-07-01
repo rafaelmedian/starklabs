@@ -17,21 +17,23 @@
     <form method="POST" action="/bot/create">
         {{ csrf_field() }}
         <div class="form-group">
+
+
             <label class="f5 b db mb2">What whould you like to build?</label>
             <div class="dt">
-                <div class="fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2 ml0-l">
+                <div class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2 ml0-l">
                     <img class="db center" src="{{ url('/dist/img/icon_bot.svg')}}"  alt="">
                     <input type="radio" value="1" name="type" required></input>
                     <h4 class="mb1">Custom Chatbot</h4>
                     <p>A customized chatbot build to fit your needs</p>
                 </div>
-                <div class="fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2">
+                <div class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2">
                     <img class="db center" src="{{ url('/dist/img/icon_workflow.svg')}}"  alt="">
                     <input class="ba1 pa4" type="radio" value="2" name="type" required></input>
                     <h4 class="mb1">Workflow Automation</h4>
                     <p>A workflow automation build around the apps your use</p>
                 </div>
-                <div class="fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2">
+                <div class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 pa4 ma2">
                     <img class="db center" src="{{ url('/dist/img/icon_custom.svg')}}" alt="">
                     <input class="ba1 pa4" type="radio" value="3" name="type" required></input>
                     <h4>A specific need</h4>

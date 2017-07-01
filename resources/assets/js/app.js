@@ -20,3 +20,53 @@ window.Vue = require('vue');
 // const app = new Vue({
 //     el: '#app'
 // });
+
+Vue.component('custom-radio', {
+  template: `
+  <div class="custom-input-container">
+    <div v-for="item in items"
+      @click="update(item)"
+      class="item"
+      :class=" highlight: selectedItem === item }"
+    {{ item }}
+    </div>
+  </div>
+  `,
+  props: {
+    value: {
+      required: true
+    },
+    items: {
+      type: Array,
+      required: true
+    }
+  },
+  data() {
+    return {
+      selectedItem: ''
+    };
+  },
+  methods: {
+    update(value) {
+      this.selectedItem = value;
+      //emit an input event
+      this.$emit('input', value);
+    }
+  }
+});
+
+new Vue({
+  el: '#app',
+  data() {
+    return {
+      numbers: [1,2,3],
+      selectedNumber: ''
+    }
+  }
+})
+
+// $(document).ready(function(){
+//   $('.radioholder').each(function(){
+//     $this
+//   })
+// }
