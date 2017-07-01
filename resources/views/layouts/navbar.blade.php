@@ -21,7 +21,7 @@
         </div>
 
         <div class="dtc v-mid w-75 tr">
-          <a class="link dim dark-gray f6 f5-ns dib mr2 mr3-m mr4-l" title="Are you a Dev?" href="/jobapplication/" >Join us</a>
-          <a class="link dim f6 fw6 grow f6 fw6 f5-ns dim dib br-pill ba ph4 ph3-ns pv1 cta cta-mini" title="Built a bot" href="/bot/" >Build a bot</a>
+          <a class="link dim dark-gray f6 f5-ns dib mr2 mr3-m mr4-l" title="Are you a Dev?" href="{{ url ('/jobapplication/') }}" >Join us</a>
+          <a class="link dim f6 fw6 grow f6 fw6 f5-ns dim dib br-pill ba ph4 ph3-ns pv1 cta cta-mini" title="Built a bot" href="{{ url ('/bot/') }}" >Build a bot</a>
         </div>
       </nav>
