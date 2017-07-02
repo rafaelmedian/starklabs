@@ -17,17 +17,14 @@
     <meta content='Let us create your bot' name='twitter:description'>
     <meta content='' name='twitter:image'>
     <meta content='@starkailabs' name='twitter:site'>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href='/img/favicon.ico' rel='shortcut icon'>
     <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
+
     <!-- Styles -->
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
     <link href="{{ asset('dist/css/app.css')}}" rel='stylesheet'>
     <title>Stark Ai Labs</title>
   </head>
-  <body>
-
-    @yield('content')
-
-    <script type="text/javascript" src="{{ asset('dist/js/app.js') }}"></script>
-  </body>
-</html>
+<body>

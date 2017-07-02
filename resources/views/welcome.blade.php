@@ -1,9 +1,9 @@
-@extends('layout')
+
+@include('layouts.head')
+
 
 <header class="w-100 bg-white bg-right pv3" style="background-image: url(dist/img/shape-hero.svg)">
-    @section('navbar')
     @include('layouts.navbar')
-    @show
     <div class="db dt mw8 center w-100 ph3 ph2-l" >
         <div class="fl bt3 pb4-ns pt4 mt4 w-50-l">
             <h1 class="lh-title tc tl-l pr0 pr5-l">Let us create your bot to scale your business needs</h1>
@@ -81,7 +81,7 @@
                 <a href="{{ url('/bot/') }}" class=" grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Build a chatbot <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta"></a>
             </div>
             <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-50-ns">
-                    <img src="dist/img/convo.svg" alt="">
+                    <img src="dist/img/convo.jpg" alt="">
                 </div>
         </div>
     </article>
@@ -199,6 +199,6 @@
             </a>
         </section>
 
-        @section('footer')
-        @include('layouts.footer')
-        @show
+@section('footer')
+@include('layouts.footer')
+@show

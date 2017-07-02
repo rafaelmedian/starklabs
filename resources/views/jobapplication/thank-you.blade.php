@@ -1,4 +1,4 @@
-@extends('layout')
+@include('layouts.head')
 <header class="w-100 bg-white bg-right pv3">
   @include('layouts.navbar')
 </header>
