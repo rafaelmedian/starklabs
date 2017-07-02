@@ -21,28 +21,28 @@
 
             <label class="f5 b db mb2">What whould you like to build?</label>
             <div class="dt" >
-                <label class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 ma2 ml0-l" for="r1">
-                    <div class="pa4">
+                <label class="radioholder fl tc w-100 w-25-ns ba br3 bw2 b--black-10 ma2 ml0-l" for="r1">
+                    <div class="pa3 pb2">
                       <input id="r1" class="o-0" type="checkbox" value="chatbot" name="type[]"></input>
                       <img class="db center" src="{{ url('/dist/img/icon_bot.svg')}}"  alt="">
-                      <h4 class="mv1" for="r1">Custom Chatbot</h4>
-                      <p for="r1">A customized chatbot build to fit your needs</p>
+                      <h4 class="mt3 mb1" for="r1">Custom Chatbot</h4>
+                      <p class="mt0 silver">A customized chatbot build to fit your needs</p>
                     </div>
                 </label>
-                <label class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 ma2" for="r2">
-                  <div class="pa4">
+                <label class="radioholder fl tc w-100 w-25-ns ba br3 bw2 b--black-10 ma2" for="r2">
+                  <div class="pa3 pb2">
                     <input id="r2" class="o-0" type="checkbox" value="workflow" name="type[]" ></input>
                     <img class="db center" src="{{ url('/dist/img/icon_workflow.svg')}}"  alt="">
-                    <h4 class="mv1">Workflow Automation</h4>
-                    <p>A workflow automation build around the apps your use</p>
+                    <h4 class="mt3 mb1">Workflow Automation</h4>
+                    <p class="mt0 silver">A workflow automation build around the apps your use</p>
                   </div>
                 </label>
-                <label class="radioholder fl tc w-100 w-30-ns ba br3 bw2 b--black-10 ma2" for="r3">
-                  <div class="pa4">
+                <label class="radioholder fl tc w-100 w-25-ns ba br3 bw2 b--black-10 ma2" for="r3">
+                  <div class="pa3 pb2">
                     <input id="r3" class="ba1 pa4 o-0" type="checkbox" value="custom" name="type[]"></input>
                     <img class="db center" src="{{ url('/dist/img/icon_custom.svg')}}" alt="">
-                    <h4 class="mv1">A specific need</h4>
-                    <p>Create AI applications to fit your specific case</p>
+                    <h4 class="mt3 mb1">A specific need</h4>
+                    <p class="mt0 silver">Create AI applications to fit your specific case</p>
                   </div>
                 </label>
             </div>
