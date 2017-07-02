@@ -29,8 +29,6 @@ class JobApplication extends Mailable
      */
     public function build()
     {
-
-
         return $this->to($this->jobApplication->email, $this->jobApplication->full_name)
                      ->view('emails.jobapplication');
     }
