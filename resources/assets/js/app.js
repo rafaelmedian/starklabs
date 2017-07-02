@@ -66,6 +66,16 @@ window.Vue = require('vue');
 // })
 
 $(document).ready(function(){
-  $('.radioholder').each(function(){
+  console.log('ready');
+
+  // $("input:radio").on("change", function() {
+  //   console.log("checked");
+  //   $(this).parent().parent().toggleClass("checked", this.checked);
+  // });
+
+  $(":radio").on("change", function() {
+    console.log("checked");
+    $(this).parent().toggleClass("checked", this.checked);
   });
+  
 });
