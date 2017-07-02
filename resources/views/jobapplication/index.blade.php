@@ -88,8 +88,8 @@
           <!-- <small id="comment-desc" class="f6 black-60">Helper text for a form control. Can use this text to <a href="#" class="link underline black-80 hover-blue">link to more info.</a></small> -->
         </div>
         <div class="pa3 pa0-ns">
-          <button type="submit" class="f6 f5-ns tc-m dib br-pill ba red ph4 pv2 cta">Get started with your project </button>
-          <img class="mr2" src="{{ url('/dist/img/r-arrow.svg')}}" alt="">
+          <button type="submit" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get started with your project </button>
+          <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta">
         </div>
       </div>
   </form>

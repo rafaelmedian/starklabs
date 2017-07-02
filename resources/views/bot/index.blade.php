@@ -93,7 +93,7 @@
             </div>
 
             <div class="pa3 pa0-l">
-                <button type="submit" class="f6 f5-l dib br-pill ba ph4 pl3-m pv2 cta">Get started with your project <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta">
+                <button type="submit" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get started with your project <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta">
                 </button>
             </div>
         </div>
