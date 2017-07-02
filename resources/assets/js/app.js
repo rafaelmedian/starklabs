@@ -73,9 +73,9 @@ $(document).ready(function(){
   //   $(this).parent().parent().toggleClass("checked", this.checked);
   // });
 
-  $(":radio").on("change", function() {
+  $(":checkbox").on("click", function() {
     console.log("checked");
-    $(this).parent().toggleClass("checked", this.checked);
+    $(this).parent().parent().toggleClass("checked", $(this).checked);
   });
-  
+
 });

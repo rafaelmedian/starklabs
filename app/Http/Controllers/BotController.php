@@ -24,6 +24,8 @@ class BotController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
+
+
     public function create(Request $request)
     {
         /** Add a form validation
@@ -43,9 +45,14 @@ class BotController extends Controller
          * Models:
          * @see https://laravel.com/docs/5.4/eloquent
          */
+
+        $typeString = implode(",", $request->get('type'));
+        // $typeString should return a value of 'chatbot, workflow, custom' check it out just in case.
+        // You can probably do something with $request->merge() to cut down on individual values in the array and cut down on the code here.
+
         // Create the bot
         $bot = new Bot();
-        $bot->type = $request->type;
+        $bot->type = $typeString;
         $bot->estimated_budget = $request->estimated_budget;
         $bot->description = $request->description;
         $bot->save();

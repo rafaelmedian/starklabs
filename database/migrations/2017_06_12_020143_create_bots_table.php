@@ -15,7 +15,7 @@ class CreateBotsTable extends Migration
     {
         Schema::create('bots', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer("type");
+            $table->string("type");
             $table->integer("estimated_budget");
             $table->text("description");
             $table->timestamps();
