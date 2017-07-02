@@ -87,7 +87,7 @@
           <textarea id="comment" class="input-reset ba br3 bw2 b--black-10 pa3 ph3 pt3 pb6 mb2 br2 w-100" name="description" required aria-describedby="comment-desc" placeholder="Tell us about any additional project details that we should know"></textarea>
           <!-- <small id="comment-desc" class="f6 black-60">Helper text for a form control. Can use this text to <a href="#" class="link underline black-80 hover-blue">link to more info.</a></small> -->
         </div>
-        <div class="pa3 pa0-ns">
+        <div class="pa3 pa0-l">
           <button type="submit" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get started with your project
           <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta">
            </button>
