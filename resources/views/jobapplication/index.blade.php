@@ -81,17 +81,16 @@
         </div>
       </div>
 
-      <div class="form-group mb6">
-        <div class="fl w-100 w-60-l dt pa3 mb4 pl0-l">
+      <div class="form-group mb5">
+        <div class="dt w-100 w-60-l pa3 mb5 pl0-l">
           <label for="comment" class="f5 b db mb2">Tell us why you are interested.</label>
           <textarea id="comment" class="input-reset ba br3 bw2 b--black-10 pa3 ph3 pt3 pb6 mb2 br2 w-100" name="description" required aria-describedby="comment-desc" placeholder="Tell us about any additional project details that we should know"></textarea>
           <!-- <small id="comment-desc" class="f6 black-60">Helper text for a form control. Can use this text to <a href="#" class="link underline black-80 hover-blue">link to more info.</a></small> -->
         </div>
         <div class="pa3 pa0-l">
           <button type="submit" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get started with your project
-          <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta">
-           </button>
-
+            <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta">
+          </button>
         </div>
       </div>
   </form>

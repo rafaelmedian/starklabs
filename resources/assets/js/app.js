@@ -75,7 +75,7 @@ $(document).ready(function(){
 
   $(":checkbox").on("click", function() {
     console.log("checked");
-    $(this).parent().parent().toggleClass("checked", $(this).checked);
+    $(this).parent().parent().parent().toggleClass("checked", $(this).checked);
   });
 
 });
