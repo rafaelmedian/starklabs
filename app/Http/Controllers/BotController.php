@@ -43,7 +43,6 @@ class BotController extends Controller
             "estimated_budget" =>'required',
             "description" =>'required',
             "full_name" =>'required',
-            "company_name" =>'required',
             "email" =>'required',
             "location" =>'required'
         ]);
