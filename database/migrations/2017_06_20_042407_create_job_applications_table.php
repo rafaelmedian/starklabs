@@ -17,7 +17,7 @@ class CreateJobApplicationsTable extends Migration
             $table->increments('id');
             $table->string('full_name');
             $table->integer('years_experience');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('location');
             $table->string('portfolio');
             $table->integer('hourly_rate');

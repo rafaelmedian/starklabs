@@ -3,9 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Bot;
+use App\Mail\Bot as BotMail;
+
 use App\Customer;
+use App\Mail\Customer as CustomerMail;
+
+use function dd;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Mail;
+
 
 class BotController extends Controller
 {
@@ -66,11 +73,17 @@ class BotController extends Controller
         $customer->location = $request->location;
         $customer->save();
 
+        $this->sendEmail($bot, $customer);
+
         return redirect('bot/thank-you');
     }
 
     public function thankYou()
     {
-        return view("bot.thank-you");
+        return view("bot/thank-you");
+    }
+
+    public function sendEmail($bot, $customer) {
+        Mail::to($bot, $customer)->send(new BotMail($bot, $customer));
     }
 }

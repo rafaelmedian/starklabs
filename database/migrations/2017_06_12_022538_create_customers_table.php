@@ -18,7 +18,7 @@ class CreateCustomersTable extends Migration
             $table->integer('bot_id');
             $table->string('full_name');
             $table->string('company_name');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('location');
             $table->timestamps();
         });
