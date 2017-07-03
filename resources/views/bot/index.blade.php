@@ -5,6 +5,7 @@
 </header>
 
 <section class="mt5 mw8 w-100 center ph3-m ph2-l">
+
     <div class="mb5 pa3 pa0-l">
         <h1 class="mb2">Tell us your needs.</h1>
         <p>Hire our top-notch team of developers to bring AI and chatbots to your organization.</p>
@@ -99,11 +100,10 @@
             </div>
 
             <div class="pa3 pa0-l">
-                <button type="submit" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get started with your project <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta">
-                </button>
+                <button type="submit" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get started with your project <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta"></button>
             </div>
+
         </div>
     </form>
 </section>
-
 @include('layouts.footer')
