@@ -7,19 +7,20 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class JobApplication extends Mailable
+class Bot extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $jobApplication;
-
+    public $bot;
+    public $customer;
     /**
      * Create a new message instance.
-     * @param $jobApplication
+     * @param $Bot
      */
-    public function __construct($jobApplication)
+    public function __construct($bot, $customer)
     {
-        $this->jobApplication = $jobApplication;
+        $this->bot = $bot;
+        $this->customer = $customer;
     }
 
     /**
@@ -30,8 +31,7 @@ class JobApplication extends Mailable
 
     public function build()
     {
-        return $this->to($this->jobApplication->email,
-               $this->jobApplication->full_name)
-               ->view('emails.jobapplication');
+        return $this->to($this->customer->email, $this->customer->full_name)
+                     ->view('emails.bot');
     }
 }

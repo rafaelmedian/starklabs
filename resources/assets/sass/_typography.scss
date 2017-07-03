@@ -14,9 +14,8 @@ body {
   @include sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, label, input, textarea, select {
   @include sans-serif;
-
   color: $text;
 }
 

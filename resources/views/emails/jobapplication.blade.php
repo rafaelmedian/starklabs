@@ -8,7 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-<h3>Hi {{ $jobApplication->full_name }}</h3>
-<p>I'm a text</p>
+    <h3>Hi {{ $jobApplication->full_name }}</h3>
+    <p> {{ $jobApplication->full_name }}</p>
+    <p> {{ $jobApplication->years_experience }}</p>
+    <p> {{ $jobApplication->email }}</p>
+    <p> {{ $jobApplication->location }}</p>
+    <p> {{ $jobApplication->hourly_rate }}</p>
+    <p> {{ $jobApplication->portfolio }}</p>
+    <p> {{ $jobApplication->availability }}</p>
+    <p> {{ $jobApplication->description }}</p>
 </body>
 </html>

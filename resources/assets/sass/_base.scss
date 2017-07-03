@@ -23,10 +23,14 @@ a {
   @include transition(all, 0.15s);
 }
 
+button {
+  cursor: pointer;
+}
+
 .bg-red {
   background-color: $red;
 }
- 
+
 .bg-light-gray {
   background-color: $gray-background;
 }

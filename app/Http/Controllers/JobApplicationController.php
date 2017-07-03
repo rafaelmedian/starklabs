@@ -39,8 +39,7 @@ class JobApplicationController extends Controller
             "location" =>'required',
             "portfolio" =>'required',
             "hourly_rate" =>'required',
-            "availability" =>'required',
-            "description" =>'required'
+            "availability" =>'required'
         ]);
 
         /**

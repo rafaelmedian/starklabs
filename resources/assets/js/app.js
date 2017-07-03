@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+// window.Vue = require('vue');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -66,6 +66,16 @@ window.Vue = require('vue');
 // })
 
 $(document).ready(function(){
-  $('.radioholder').each(function(){
+  console.log('ready');
+
+  // $("input:radio").on("change", function() {
+  //   console.log("checked");
+  //   $(this).parent().parent().toggleClass("checked", this.checked);
+  // });
+
+  $(":checkbox").on("click", function() {
+    console.log("checked");
+    $(this).parent().parent().parent().toggleClass("checked", $(this).checked);
   });
+
 });
