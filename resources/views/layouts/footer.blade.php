@@ -6,6 +6,6 @@
         <a href="/privacy/"  title="Privacy" class="f6 dib ph2 link  dim">Privacy</a>
       </div>
     </footer>
-    <script type="text/javascript" src="{{ asset('dist/js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_asset('dist/js/app.js') }}"></script>
   </body>
 </html>
