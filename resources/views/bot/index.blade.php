@@ -79,7 +79,7 @@
                     <!-- <small id="name-desc" class="f6 black-60 db mb2">Helper text for the form control.</small> -->
                 </div>
                 <div class="fl w-100 w-30-l pa3 pl0-l ml1-l">
-                    <label for="company_name" class="f5 b db mb2">Company Name</label>
+                    <label for="company_name" class="f5 b db mb2">Company Name <span class="normal">(optional)</span></label>
                     <input id="company_name" class="input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100" name="company_name" type="text" aria-describedby="company_name-desc" placeholder="Company Inc.">
                     <!-- <small id="company_name-desc" class="f6 black-60 db mb2">Helper text for the form control.</small> -->
                 </div>

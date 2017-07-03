@@ -31,33 +31,25 @@
           </div>
           <div class="fl w-100 w-30-l pa3 pl0-l ml1-l">
             <label for="years_experience" class="f5 b db mb2">Years of experience</label>
-            <input id="years_experience" class="input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100" name="years_experience" type="number" aria-describedby="years_experience-desc" placeholder="3+ years">
+            <!-- <input id="years_experience" class="input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100" name="years_experience" type="number" aria-describedby="years_experience-desc" placeholder="3+ years"> -->
             <!-- <small id="company_name-desc" class="f6 black-60 db mb2">Helper text for the form control.</small> -->
-            <select class="measure input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100 " required name="years_experience">
-              <option value="0">0</option>
+            <select class="measure input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100 " required name="years_experience" aria-describedby="years_experience-desc">
+              <option value="0">No experience</option>
               <option value="1">1 year</option>
               <option value="2">2 years</option>
               <option value="3">3 years</option>
               <option value="4">4 years</option>
               <option value="5">5 years</option>
-              <option value="0">0</option>
-              <option value="1">1 year</option>
-              <option value="2">2 years</option>
-              <option value="3">3 years</option>
-              <option value="4">4 years</option>
-              <option value="5">5 years</option>
-              <option value="0">0</option>
-              <option value="1">1 year</option>
-              <option value="2">2 years</option>
-              <option value="3">3 years</option>
-              <option value="4">4 years</option>
-              <option value="5">5 years</option>
-              <option value="0">0</option>
-              <option value="1">1 year</option>
-              <option value="2">2 years</option>
-              <option value="3">3 years</option>
-              <option value="4">4 years</option>
-              <option value="5">5 years</option>
+              <option value="6">6 years</option>
+              <option value="7">7 years</option>
+              <option value="8">8 years</option>
+              <option value="9">9 years</option>
+              <option value="10">10 years</option>
+              <option value="11">11 years</option>
+              <option value="12">12 years</option>
+              <option value="13">13 years</option>
+              <option value="14">14 years</option>
+              <option value="15">+15 years</option>
             </select>
           </div>
         </div>
