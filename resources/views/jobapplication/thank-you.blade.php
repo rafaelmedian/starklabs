@@ -7,7 +7,7 @@
   <div class="mb6 pa3 pa0-l tc">
     <h1 class="mb3 f2">Thank you. We will contact you very soon.</h1>
     <p class="mb5">Keep having fun meanwhile, and spread the word.</p>
-    <a href="" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta"><img class="ml2 v-mid" height="19px" src="dist/img/r-arrow.svg" alt="cta"> Go Back </a>
+    <a href="/" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta"><img class="mr2 v-mid" height="19px" src="{{ asset('dist/img/l-arrow.svg') }}" alt="cta"> Go Back </a>
   </div>
 </section>
 
