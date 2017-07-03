@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Bot;
 use App\Mail\Bot as BotMail;
+use App\Mail\BotEmail;
 
 use App\Customer;
 use App\Mail\Customer as CustomerMail;
@@ -83,6 +84,6 @@ class BotController extends Controller
     }
 
     public function sendEmail($bot, $customer) {
-        Mail::to($bot, $customer)->send(new BotMail($bot, $customer));
+        Mail::to($customer)->send(new BotEmail($bot, $customer));
     }
 }

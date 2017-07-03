@@ -31,15 +31,7 @@ class Bot extends Mailable
 
     public function build()
     {
-        return $this->to($this->bot->type,
-                        $this->bot->estimated_budget,
-                        $this->bot->description,
-                        $this->customer->full_name,
-                        $this->customer->company_name,
-                        $this->customer->hourly_rate,
-                        $this->customer->email,
-                        $this->customer->location
-                        )
+        return $this->to($this->customer->email, $this->customer->full_name)
                      ->view('emails.bot');
     }
 }
