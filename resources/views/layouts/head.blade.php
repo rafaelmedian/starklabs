@@ -24,7 +24,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
-    <link href="{{ asset('dist/css/app.css')}}" rel='stylesheet'>
+    <link href="{{ secure_asset('dist/css/app.css')}}" rel='stylesheet'>
     <title>Stark Ai Labs</title>
   </head>
 <body>
