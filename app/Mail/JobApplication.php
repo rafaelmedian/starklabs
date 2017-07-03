@@ -31,15 +31,7 @@ class JobApplication extends Mailable
     public function build()
     {
         return $this->to($this->jobApplication->email,
-                        $this->jobApplication->full_name,
-                        $this->jobApplication->years_experience,
-                        $this->jobApplication->email,
-                        $this->jobApplication->location,
-                        $this->jobApplication->hourly_rate,
-                        $this->jobApplication->portfolio,
-                        $this->jobApplication->availability,
-                        $this->jobApplication->description
-                        )
-                     ->view('emails.jobapplication');
+                $this->jobApplication->full_name)
+                ->view('emails.jobapplication');
     }
 }
