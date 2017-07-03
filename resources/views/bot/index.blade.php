@@ -22,7 +22,7 @@
             <div class="radioholder fl tc w-100 w-25-l ba br3 bw2 b--black-10 mv2 mr3-l">
               <label class="" for="r1">
                 <div class="ph3 pv3">
-                  <input id="r1" class="o-0 dn" type="checkbox" value="chatbot" name="type[]"></input>
+                  <input id="r1" class="o-0 dn" type="checkbox" value="1" name="type[]"></input>
                   <img class="db center pt1" src="{{ url('/dist/img/icon_bot.svg')}}"  alt="">
                   <h4 class="mt3 mb1" for="r1">Custom Chatbot</h4>
                   <p class="mv0 silver">A customized chatbot build to fit your needs</p>
@@ -32,7 +32,7 @@
             <div class="radioholder fl tc w-100 w-25-l ba br3 bw2 b--black-10 mv2 mr3-l ">
               <label class="" for="r2">
                 <div class="ph3 pv3">
-                  <input id="r2" class="o-0 dn" type="checkbox" value="workflow" name="type[]" ></input>
+                  <input id="r2" class="o-0 dn" type="checkbox" value="2" name="type[]" ></input>
                   <img class="db center pt1" src="{{ url('/dist/img/icon_workflow.svg')}}"  alt="">
                   <h4 class="mt3 mb1">Workflow Automation</h4>
                   <p class="mv0 silver">A workflow automation build around the apps your use</p>
@@ -42,7 +42,7 @@
             <div class="radioholder fl tc w-100 w-25-l ba br3 bw2 b--black-10 mv2 mr3-l ">
               <label class="" for="r3">
                 <div class="ph3 pv3">
-                  <input id="r3" class="o-0 dn" type="checkbox" value="custom" name="type[]"></input>
+                  <input id="r3" class="o-0 dn" type="checkbox" value="3" name="type[]"></input>
                   <img class="db center pt1" src="{{ url('/dist/img/icon_custom.svg')}}" alt="">
                   <h4 class="mt3 mb1">A specific need</h4>
                   <p class="mv0 silver">Create AI applications to fit your specific case</p>

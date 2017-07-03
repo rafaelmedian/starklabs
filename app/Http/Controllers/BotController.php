@@ -7,6 +7,7 @@ use App\Mail\Bot as BotMail;
 use App\Mail\BotEmail;
 
 use App\Customer;
+use App\BotTypes;
 use App\Mail\Customer as CustomerMail;
 
 use function dd;
@@ -24,7 +25,7 @@ class BotController extends Controller
      */
     public function index()
     {
-        return view("bot.index");
+        return view("bot.index", compact("types"));
     }
 
     /**
@@ -53,16 +54,26 @@ class BotController extends Controller
          * @see https://laravel.com/docs/5.4/eloquent
          */
 
-        $typeString = implode(",", $request->get('type'));
+//        $typeString = implode(", ", $request->get('type'));
         // $typeString should return a value of 'chatbot, workflow, custom' check it out just in case.
         // You can probably do something with $request->merge() to cut down on individual values in the array and cut down on the code here.
 
+
+
+
         // Create the bot
         $bot = new Bot();
-        $bot->type = $typeString;
         $bot->estimated_budget = $request->estimated_budget;
         $bot->description = $request->description;
         $bot->save();
+
+        // Create the bot types
+        foreach($request->type as $type) {
+            $botType = new BotTypes();
+            $botType->bot_id = $bot->id;
+            $botType->type = $type;
+            $botType->save();
+        }
 
         // Create the customer
         $customer = new Customer();
