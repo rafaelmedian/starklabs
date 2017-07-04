@@ -57,9 +57,9 @@
             <div class="w-80 w-30-l dt pa3 pl0-l">
                 <label class="f5 b db mb2">What's your stimated budget?</label>
                 <select class="measure input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100 " required name="estimated_budget">
-                    <option value="1">200 - 500</option>
-                    <option value="2">500 - 700</option>
-                    <option value="3">700 - 900</option>
+                    <option value="1">$500 - $1,000</option>
+                    <option value="2">$2,000 - $10,000</option>
+                    <option value="3">$20,000 - $50,000</option>
                 </select>
             </div>
         </div>
