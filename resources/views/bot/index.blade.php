@@ -24,7 +24,7 @@
               <label class="" for="r1">
                 <div class="ph3 pv3">
                   <input id="r1" class="o-0 dn" type="checkbox" value="1" name="type[]"></input>
-                  <img class="db center pt1" src="{{ url('/dist/img/icon_bot.svg')}}"  alt="">
+                  <img class="db center pt1" src="{{ secure_asset('/dist/img/icon_bot.svg')}}"  alt="">
                   <h4 class="mt3 mb1" for="r1">Custom Chatbot</h4>
                   <p class="mv0 silver">A customized chatbot build to fit your needs</p>
                 </div>
@@ -34,7 +34,7 @@
               <label class="" for="r2">
                 <div class="ph3 pv3">
                   <input id="r2" class="o-0 dn" type="checkbox" value="2" name="type[]" ></input>
-                  <img class="db center pt1" src="{{ url('/dist/img/icon_workflow.svg')}}"  alt="">
+                  <img class="db center pt1" src="{{ secure_asset('/dist/img/icon_workflow.svg')}}"  alt="">
                   <h4 class="mt3 mb1">Workflow Automation</h4>
                   <p class="mv0 silver">A workflow automation build around the apps your use</p>
                 </div>
@@ -44,7 +44,7 @@
               <label class="" for="r3">
                 <div class="ph3 pv3">
                   <input id="r3" class="o-0 dn" type="checkbox" value="3" name="type[]"></input>
-                  <img class="db center pt1" src="{{ url('/dist/img/icon_custom.svg')}}" alt="">
+                  <img class="db center pt1" src="{{ secure_asset('/dist/img/icon_custom.svg')}}" alt="">
                   <h4 class="mt3 mb1">A specific need</h4>
                   <p class="mv0 silver">Create AI applications to fit your specific case</p>
                 </div>
@@ -100,7 +100,7 @@
             </div>
 
             <div class="pa3 pa0-l">
-                <button type="submit" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get started with your project <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta"></button>
+                <button type="submit" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get started with your project <img class="ml2 v-mid" height="19px" src="{{ secure_asset('/dist/img/r-arrow.svg')}}" alt="cta"></button>
             </div>
 
         </div>
