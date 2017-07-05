@@ -2,7 +2,7 @@
 @include('layouts.head')
 
 
-<header class="w-100 bg-white bg-right pv3" style="background-image: {{ url('secure_url('dist/img/shape-hero.svg')') )}} ">
+<header class="w-100 bg-white bg-right pv3" style="background-image: {{ url('secure_url('dist/img/shape-hero.svg')}}') ) ">
     @include('layouts.navbar')
     <div class="db dt mw8 center w-100 ph3 ph2-l" >
         <div class="fl bt3 pb4-ns pt4 mt4 w-50-l">
@@ -78,7 +78,7 @@
                 <p class="f5 lh-copy mb5">We now live in a messaging economy. Your customers want to interact with you. You provide the information,engage
                     with them, sell and market your products where they are. Automate the interactions using chatbot to deliver a
                     faster experience that’s always on and cost-effective.</p>
-                <a href="{{ url('/bot/') }}" class=" grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Build a chatbot <img class="ml2 v-mid" height="19px" src="{{ secure_url('/dist/img/r-arrow.svg')}}" alt="cta"></a>
+                <a href="{{ secure_url('/bot/') }}" class=" grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Build a chatbot <img class="ml2 v-mid" height="19px" src="{{ secure_url('/dist/img/r-arrow.svg')}}" alt="cta"></a>
             </div>
             <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-50-ns">
                     <img src="{{ secure_asset('/dist/img/convo.jpg')}}" alt="">
@@ -98,7 +98,7 @@
                     tedious tasks. With Stark.ai Workflow Automation, the days of many manual tasks are eliminated! We create the
                     criteria for your robot and tell the robot what to do, and like magic, it’s done.</p>
 
-                <a href="{{ url ('/bot/') }}" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get a workflow <img class="ml2 v-mid" height="19px" src="{{ secure_asset('dist/img/r-arrow.svg')}}" alt="cta"></a>
+                <a href="{{ secure_url('/bot/') }}" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Get a workflow <img class="ml2 v-mid" height="19px" src="{{ secure_asset('dist/img/r-arrow.svg')}}" alt="cta"></a>
 
             </div>
         </div>
@@ -193,8 +193,8 @@
             <p class="f5 tc mb4 lh-copy">
                 We are ready for a challenge. Start your project now.
             </p>
-            <div class="w-100 bg-white contain bg-left pv6 mb4" style="background-image: url(dist/img/footer-bg-logos.jpg)"></div>
-            <a href="{{ url ('/bot/') }}" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Let’s build your bot
+            <div class="w-100 bg-white contain bg-left pv6 mb4" style="background-image:  url('{{secure_url('dist/img/footer-bg-logos.jpg')}}') )"></div>
+            <a href="{{ secure_url('/bot/') }}" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Let’s build your bot
                 <img class="ml2 v-mid" height="19px" src="{{ url('/dist/img/r-arrow.svg')}}" alt="cta">
             </a>
         </section>
