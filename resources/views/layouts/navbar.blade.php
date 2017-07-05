@@ -1,7 +1,7 @@
 <nav class="dt w-100 mw8 center border-box pv3 ph3 ph2-l">
   <div class="dtc w-25 h2">
-    <a class=" v-mid mid-gray link dim" href="{{ url ('/') }}" title="Home">
-      <svg width="155px" height="30px" viewBox="0 0 155 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <a class=" v-mid mid-gray link dim" href="{{ secure_url('/') }}" title="Home">
+      <svg width="155px" height="30px" viewBox="0 0 155 30" version="1.1" >
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-1.000000, -1.000000)">
             <g>
