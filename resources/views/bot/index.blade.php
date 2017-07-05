@@ -18,7 +18,7 @@
     <form method="POST" action="/bot/create">
         {{ csrf_field() }}
         <div class="form-group mb3">
-          <label class="f5 b db mb1 ml3 ml0-l">What whould you like to build?</label>
+          <label class="f5 b db mb1 ml3 ml0-l">What would you like to build?</label>
           <div class="dt pa3 pa0-l" >
             <div class="radioholder fl tc w-100 w-25-l ba br3 bw2 b--black-10 mv2 mr3-l">
               <label class="" for="r1">
@@ -55,7 +55,7 @@
 
         <div class="form-group mb1">
             <div class="w-80 w-30-l dt pa3 pl0-l">
-                <label class="f5 b db mb2">What's your stimated budget?</label>
+                <label class="f5 b db mb2">What's you estimated monthly budget?</label>
                 <select class="measure input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100 " required name="estimated_budget">
                     <option value="1">$500 - $1,000</option>
                     <option value="2">$2,000 - $10,000</option>
