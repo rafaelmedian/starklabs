@@ -19,11 +19,16 @@
     <meta content='@starkailabs' name='twitter:site'>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href='/img/favicon.ico' rel='shortcut icon'>
-    <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
+    <link href="{{ secure_asset('/img/favicon.ico') }}" rel='shortcut icon'>
+    <link href="{{ secure_asset('img/apple-touch-icon.png') }}" rel='apple-touch-icon'>
+    <link rel="icon" type="image/png" href="{{ secure_asset('favicon-32x32.png') }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ secure_asset('favicon-16x16.png') }}" sizes="16x16" />
+
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/> -->
     <link href="{{ secure_asset('dist/css/app.css')}}" rel='stylesheet'>
     <title>Stark Ai Labs</title>
   </head>
