@@ -66,13 +66,7 @@ require('./bootstrap');
 // })
 
 $(document).ready(function(){
-  console.log('ready');
-
-  // $("input:radio").on("change", function() {
-  //   console.log("checked");
-  //   $(this).parent().parent().toggleClass("checked", this.checked);
-  // });
-
+  
   $(":checkbox").on("click", function() {
     console.log("checked");
     $(this).parent().parent().parent().toggleClass("checked", $(this).checked);
