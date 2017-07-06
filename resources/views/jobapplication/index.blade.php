@@ -87,7 +87,7 @@
             </select>
           </div>
           <div class="fl w-50 w-30-l pa3 pl0-l ml1-l">
-            <label class="f5 b db mb2">Hours per week are you available?</label>
+            <label class="f5 b db mb2">Available hours a week</label>
             <select class="measure input-reset ba br3 bw2 b--black-10 pa3 ph3 mb2 db w-100 " required name="availability">
               <option value="1">10 - 15</option>
               <option value="2">15 - 25</option>
