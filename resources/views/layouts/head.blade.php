@@ -19,11 +19,10 @@
     <meta content='@starkailabs' name='twitter:site'>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{ secure_asset('/img/favicon.ico') }}" rel='shortcut icon'>
-    <link href="{{ secure_asset('img/apple-touch-icon.png') }}" rel='apple-touch-icon'>
-    <link rel="icon" type="image/png" href="{{ secure_asset('favicon-32x32.png') }}" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{ secure_asset('favicon-16x16.png') }}" sizes="16x16" />
-
+    <link href="{{ secure_asset('dist/img/favicon.ico') }}" rel='shortcut icon'>
+    <link href="{{ secure_asset('dist/img/apple-touch-icon.png') }}" rel='apple-touch-icon'>
+    <link rel="icon" type="image/png" href="{{ secure_asset('dist/img/favicon-32x32.png') }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ secure_asset('dist/img/favicon-16x16.png') }}" sizes="16x16" />
 
     <!-- Styles -->
 
