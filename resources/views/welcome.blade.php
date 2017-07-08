@@ -21,9 +21,7 @@
 <section class="w-100 center bg-red pa4 ph5-ns mb4">
     <h1 class="mw8 center tc mt0 f3 tc white lh-title mb2">Power your business with Artificial Intelligence and Automation</h1>
     <p class="mw7 center tc f5 tc lh-copy white">
-        We build custom bot solutions for your business either AI or rule based. To automate interactions using powerful data integrations
-        that are always on and are cost-effective. Whether it’s streamlining customer service using social media apps, a AI-driven
-        personal assistant or workflow automation to address your company specific use cases.
+        We build custom bot solutions for your business either AI or rule based. To automate interactions using powerful data integrations that are always on and are cost-effective. Whether it’s streamlining customer service using social media apps, an AI-driven personal assistant or workflow automation to address your company specific use cases.
     </p>
 </section>
 
@@ -119,33 +117,33 @@
                 <div class="fl w-100 w-third-ns pa3 pa2-ns ">
                     <div class="bg-light-gray ba br2 b--light-gray pa4 tl">
                         <div class="mb3">
-                            <img src="{{ secure_asset('/dist/img/slack.jpg')}}" alt="" style="width:40px;" class="mr1">
-                            <img src="{{ secure_asset('/dist/img/plus.jpg')}}" alt="" style="width:15px;" class="mr1">
-                            <img src="{{ secure_asset('/dist/img/skype.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/gmail.jpg')}}" alt="gmail" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/plus.jpg')}}" alt="plus" style="width:15px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/trello.jpg')}}" alt="trello" style="width:40px;" class="mr1">
                         </div>
-                        <p class="">Automate social media by posting an update when you publish new content.
+                        <p class="mb1">Create Trello cards from new starred Gmail emails in your inbox.
                         </p>
                     </div>
                 </div>
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
                     <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
-                            <img src="{{ secure_asset('/dist/img/slack.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/mailchimp.jpg')}}" alt="" style="width:40px;" class="mr1">
                             <img src="{{ secure_asset('/dist/img/plus.jpg')}}" alt="" style="width:15px;" class="mr1">
-                            <img src="{{ secure_asset('/dist/img/skype.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/slack.jpg')}}" alt="" style="width:40px;" class="mr1">
                         </div>
-                        <p class="">Automate social media by posting an update when you publish new content.
+                        <p class="mb1">Get new Slack notifications for new MailChimp subscribers.
                         </p>
                     </div>
                 </div>
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
                     <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
-                            <img src="{{ secure_asset('/dist/img/slack.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/g-form.jpg')}}" alt="" style="width:40px;" class="mr1">
                             <img src="{{ secure_asset('/dist/img/plus.jpg')}}" alt="" style="width:15px;" class="mr1">
-                            <img src="{{ secure_asset('/dist/img/skype.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/stripe.jpg')}}" alt="" style="width:40px;" class="mr1">
                         </div>
-                        <p class="">Automate social media by posting an update when you publish new content.
+                        <p class="mb1">Create a new Gravity Form from a paid Stripe event.
                         </p>
                     </div>
                 </div>
@@ -155,33 +153,33 @@
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
                     <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
-                            <img src="{{ secure_asset('/dist/img/slack.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/stripe.jpg')}}" alt="" style="width:40px;" class="mr1">
                             <img src="{{ secure_asset('/dist/img/plus.jpg')}}" alt="" style="width:15px;" class="mr1">
-                            <img src="{{ secure_asset('/dist/img/skype.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/gmail.jpg')}}" alt="" style="width:40px;" class="mr1">
                         </div>
-                        <p class="">Automate social media by posting an update when you publish new content.
+                        <p class="mb1">Send new emails from each new Stripe events that you get.
                         </p>
                     </div>
                 </div>
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
                     <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
-                            <img src="{{ secure_asset('/dist/img/slack.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/paypal.jpg')}}" alt="" style="width:40px;" class="mr1">
                             <img src="{{ secure_asset('/dist/img/plus.jpg')}}" alt="" style="width:15px;" class="mr1">
-                            <img src="{{ secure_asset('/dist/img/skype.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/g-contacts.jpg')}}" alt="" style="width:40px;" class="mr1">
                         </div>
-                        <p class="">Automate social media by posting an update when you publish new content.
+                        <p class="mb1">Add new contacts each time they pay through paypal.
                         </p>
                     </div>
                 </div>
                 <div class="fl w-100 w-third-ns pa3 pa2-ns">
                     <div class="bg-light-gray pa4 ba br2 b--light-gray tl">
                         <div class="mb3">
-                            <img src="{{ secure_asset('/dist/img/slack.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/g-contacts.jpg')}}" alt="" style="width:40px;" class="mr1">
                             <img src="{{ secure_asset('/dist/img/plus.jpg')}}" alt="" style="width:15px;" class="mr1">
-                            <img src="{{ secure_asset('/dist/img/skype.jpg')}}" alt="" style="width:40px;" class="mr1">
+                            <img src="{{ secure_asset('/dist/img/mailchimp.jpg')}}" alt="" style="width:40px;" class="mr1">
                         </div>
-                        <p class="">Automate social media by posting an update when you publish new content.
+                        <p class="mb1">Add a new Google Contact from new MailChimp subscribers.
                         </p>
                     </div>
                 </div>
@@ -189,7 +187,7 @@
         </section>
 
         <section class="mt5 w-100 center tc mb5">
-            <h1 class="f3 tc mb2 lh-title">Create custom automated workflows and bot for any patform</h1>
+            <h1 class="f3 tc mb2 lh-title">Create custom automated workflows and bot for any platform</h1>
             <p class="f5 tc mb4 lh-copy">
                 We are ready for a challenge. Start your project now.
             </p>
