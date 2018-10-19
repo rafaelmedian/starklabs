@@ -17,7 +17,7 @@ class CreateBotTypeTable extends Migration
       Schema::create('bot_types', function (Blueprint $table) {
           $table->increments('id');
           $table->integer('bot_id');
-          $table->integer('type');
+          $table->integer('type')->nullable();
           $table->timestamps();
       });
   }

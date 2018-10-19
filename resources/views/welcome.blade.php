@@ -191,7 +191,7 @@
             <p class="f5 tc mb4 lh-copy">
                 We are ready for a challenge. Start your project now.
             </p>
-            <div class="w-100 bg-white contain bg-left pv6 mb4" style="background-image:  url('{{secure_url('dist/img/footer-bg-logos.jpg')}}')"></div>
+            <div class="w-100 bg-white contain bg-left pv6 mb4" style="background-image:  url('{{secure_url('dist/img/footer-bg-logos.jpg')}}') "></div>
             <a href="{{ secure_url('/bot/') }}" class="grow f6 f5-ns tc-m dib br-pill ba ph4 pv2 cta">Let’s build your bot
                 <img class="ml2 v-mid" height="19px" src="{{ secure_url('/dist/img/r-arrow.svg')}}" alt="cta">
             </a>
