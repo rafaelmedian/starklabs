@@ -20,7 +20,7 @@
     </div>
   @endif
 
-  <form method="POST" action="/jobapplication/create">
+  <form method="POST" action="{{ secure_url('/jobapplication/create') }}">
       {{ csrf_field() }}
       <div class="form-group ">
         <div class="w-100 dt">
