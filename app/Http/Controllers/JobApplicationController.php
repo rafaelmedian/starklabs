@@ -69,7 +69,8 @@ class JobApplicationController extends Controller
     }
 
     public function sendEmail($jobApplication) {
-        
+
         Mail::to("rafaelmedina@outlook.com")->send(new JobApplicationMail($jobApplication)); 
+
     }
 }
