@@ -8,12 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Hi {{ $bot->type }} </h3>
-    <p> {{ $bot->estimated_budget }} </p>
-    <p> {{ $bot->description }} </p>
-    <p> {{ $customer->full_name }} </p>
-    <p> {{ $customer->company_name }} </p>
-    <p> {{ $customer->email }}</p>
-    <p> {{ $customer->location }}</p>
+    <h3>Bot development request</h3>
+    <h3>Type of bot {{ $bot->type }} </h3>
+    <p><b>Budget:</b>  {{ $bot->estimated_budget }} </p>
+    <p><b>Description:</b> {{ $bot->description }} </p>
+    <p><b>Name:</b> {{ $customer->full_name }} </p>
+    <p><b>Company name:</b> {{ $customer->company_name }} </p>
+    <p><b>Email:</b> {{ $customer->email }}</p>
+    <p><b>Location:</b> {{ $customer->location }}</p>
 </body>
 </html>

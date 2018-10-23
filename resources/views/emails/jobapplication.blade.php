@@ -8,14 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Hi {{ $jobApplication->full_name }}</h3>
-    <p> {{ $jobApplication->full_name }}</p>
-    <p> {{ $jobApplication->years_experience }}</p>
-    <p> {{ $jobApplication->email }}</p>
-    <p> {{ $jobApplication->location }}</p>
-    <p> {{ $jobApplication->hourly_rate }}</p>
-    <p> {{ $jobApplication->portfolio }}</p>
-    <p> {{ $jobApplication->availability }}</p>
-    <p> {{ $jobApplication->description }}</p>
+    <h3>Job Application</h3>
+    <p><b>Name:</b> {{ $jobApplication->full_name }}</p>
+    <p><b>Years of Experience:</b>  {{ $jobApplication->years_experience }}</p>
+    <p><b>Email address:</b>  {{ $jobApplication->email }}</p>
+    <p><b>Location:</b>  {{ $jobApplication->location }}</p>
+    <p><b>Hourly rate:</b>  {{ $jobApplication->hourly_rate }}</p>
+    <p><b>Portfolio site:</b>  {{ $jobApplication->portfolio }}</p>
+    <p><b>Availability:</b>  {{ $jobApplication->availability }}</p>
+    <p><b>Description:</b>  {{ $jobApplication->description }}</p>
 </body>
 </html>
