@@ -42,6 +42,8 @@ class JobApplicationController extends Controller
             "availability" =>'required'
         ]);
 
+        $mail = $request->email;
+
         /**
          * Models:
          * @see https://laravel.com/docs/5.4/eloquent
@@ -50,7 +52,7 @@ class JobApplicationController extends Controller
         $jobApplication = new jobApplication();
         $jobApplication->full_name = $request->full_name;
         $jobApplication->years_experience = $request->years_experience;
-        $jobApplication->email = $request->email;
+        $jobApplication->email = $mail;
         $jobApplication->location = $request->location;
         $jobApplication->hourly_rate = $request->hourly_rate;
         $jobApplication->portfolio = $request->portfolio;
@@ -63,14 +65,11 @@ class JobApplicationController extends Controller
         return redirect('jobapplication/thank-you');
     }
 
-    public function thankYou()
-    {
+    public function thankYou() {
         return view("jobapplication/thank-you");
     }
 
     public function sendEmail($jobApplication) {
-
-        Mail::to("rafaelmedina@outlook.com")->send(new JobApplicationMail($jobApplication)); 
-
+        Mail::to("joyce@starklabs.io")->send(new JobApplicationMail($jobApplication));
     }
 }

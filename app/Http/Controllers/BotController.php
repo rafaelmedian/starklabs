@@ -95,6 +95,6 @@ class BotController extends Controller
     }
 
     public function sendEmail($bot, $customer) {
-        Mail::to($customer)->send(new BotEmail($bot, $customer));
+        Mail::to("joyce@starklabs.io")->send(new BotEmail($bot, $customer));
     }
 }
