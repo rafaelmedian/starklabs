@@ -9,12 +9,12 @@
 </head>
 <body>
     <h3>Bot development request</h3>
-    <h3>Type of bot {{ $bot->type }} </h3>
-    <p><b>Budget:</b>  {{ $bot->estimated_budget }} </p>
-    <p><b>Description:</b> {{ $bot->description }} </p>
-    <p><b>Name:</b> {{ $customer->full_name }} </p>
-    <p><b>Company name:</b> {{ $customer->company_name }} </p>
-    <p><b>Email:</b> {{ $customer->email }}</p>
-    <p><b>Location:</b> {{ $customer->location }}</p>
+    <h3>Type of bot {{ $bot_id }} </h3>
+    <p><b>Budget:</b>  {{ $estimated_budget }} </p>
+    <p><b>Description:</b> {{ $description }} </p>
+    <p><b>Name:</b> {{ $full_name }} </p>
+    <p><b>Company name:</b> {{ $company_name }} </p>
+    <p><b>Email:</b> {{ $email }}</p>
+    <p><b>Location:</b> {{ $location }}</p>
 </body>
 </html>

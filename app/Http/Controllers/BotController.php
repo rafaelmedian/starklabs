@@ -76,15 +76,40 @@ class BotController extends Controller
         }
 
         // Create the customer
-        $customer = new Customer();
-        $customer->bot_id = $bot->id;
-        $customer->full_name = $request->full_name;
-        $customer->company_name = $request->company_name;
-        $customer->email = $request->email;
-        $customer->location = $request->location;
-        $customer->save();
+        // $customer = new Customer();
+        // $customer->bot_id = $bot->id;
+        // $customer->full_name = $request->full_name;
+        // $customer->company_name = $request->company_name;
+        // $customer->email = $request->email;
+        // $customer->location = $request->location;
+        // $customer->save();
 
-        $this->sendEmail($bot, $customer);
+        // $botType = array();
+        // foreach($request->type as $botType) {
+        //     $botTypes[] = $type;
+        //     // $botType = new BotTypes();
+        //     // $botType->bot_id = $bot->id;
+        //     // $botType->type = $type;
+        //     // $botType->save();
+        // }
+
+        $customer = array(
+            'bot_id' => $bot->id,
+            'estimated_budget' => $request->estimated_budget,
+            'description' => $request->description,
+            'full_name' => $request->full_name,
+            'company_name' => $request->company_name,
+            'email' => $request->email,
+            'location' => $request->location
+        );
+
+        // $this->sendEmail($bot, $customer);
+
+        Mail::send('emails.bot', $customer, function($message){
+            $message->from("joyce@starklabs.io");
+            $message->to("joyce@starklabs.io");
+            $message->subject("Email Bot Application");
+        });
 
         return redirect('bot/thank-you');
     }

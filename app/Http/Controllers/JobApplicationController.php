@@ -52,7 +52,7 @@ class JobApplicationController extends Controller
         $jobApplication = new jobApplication();
         $jobApplication->full_name = $request->full_name;
         $jobApplication->years_experience = $request->years_experience;
-        $jobApplication->email = $mail;
+        $jobApplication->email = $request->email;
         $jobApplication->location = $request->location;
         $jobApplication->hourly_rate = $request->hourly_rate;
         $jobApplication->portfolio = $request->portfolio;
@@ -60,7 +60,24 @@ class JobApplicationController extends Controller
         $jobApplication->description = $request->description;
         $jobApplication->save();
 
-        $this->sendEmail($jobApplication);
+        $data = array(
+            'full_name' => $request->full_name,
+            'years_experience' => $request->years_experience,
+            'location' => $request->location,
+            'email' => $request->email,
+            'hourly_rate' => $request->hourly_rate,
+            'portfolio' => $request->portfolio,
+            'availability' => $request->availability,
+            'description' => $request->description        
+        );
+
+
+        Mail::send('emails.jobapplication', $data, function($message){
+            $message->from("joyce@starklabs.io");
+            $message->to("joyce@starklabs.io");
+            $message->subject("Email Job Application");
+        });
+        
 
         return redirect('jobapplication/thank-you');
     }
